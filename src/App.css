@@ -1,0 +1,46 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Hide overflow */
+}
+
+.video-container-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack videos vertically */
+  justify-content: flex-start; /* Start videos from the top */
+  align-items: center;
+  transition: transform 0.3s ease-out; /* Smooth scrolling transition */
+}
+
+.video-container {
+  width: 500px;  /* Set width to simulate phone screen width (portrait) */
+  height: 900px; /* Set height to simulate phone screen height (portrait) */
+  display: flex;
+  justify-content: center;  /* Center the video horizontally */
+  align-items: center;      /* Center the video vertically */
+  background-color: #f0f0f0; /* Light background for container */
+  border-radius: 15px; /* Rounded corners for container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to simulate depth */
+}
+
+.video {
+  width: 100%;  /* Stretch video to fill the container width */
+  height: 100%; /* Stretch video to fill the container height */
+  object-fit: cover; /* Ensure video covers the container without distorting */
+  border-radius: 15px; /* Rounded corners for video */
+}
